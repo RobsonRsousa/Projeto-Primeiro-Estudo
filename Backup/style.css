@@ -1,0 +1,61 @@
+* {
+  /* Essas opções reseta a configuração do navegador para que obedeça os seus códigos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./Imagens/bg-mobile.jpg) no-repeat center/cover;
+}
+
+body * {
+  color: var(--text-color-dark-mode, #fff);
+  font-family: Inter;
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* Links */
+ul {
+  list-style: none;
+  /* Isso faz com que tire os pontinhos */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* esses 3 são necessários para colocar o display-flex em colunas, um embaixo do outro (normalmente seria um do lado do outro) e para que seja possível colocar um gap */
+}
+
+ul li a {
+  justify-content: center;
+  align-items: center;
+  /* justify-content alinha as palavras para que fique no centro da tela
+  align-items alinha as palavras para que fique no centro da linha */
+  display: flex;
+  padding: 16px 24px;
+  border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.5));
+  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.1));
+  border-radius: 8px;
+  text-decoration: none;
+  /* text-decoration tira as linhas debaixo */
+  font-weight: 500;
+}
